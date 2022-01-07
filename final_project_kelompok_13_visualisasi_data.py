@@ -17,10 +17,8 @@ from bokeh.layouts import column, widgetbox
 import pandas as pd
 import numpy as np
 
-from google.colab import drive
-drive.mount('/content/drive')
 
-df_stock = pd.read_csv("drive/My Drive/kuliah/TUBES VISDAT/SahamMNCBank.csv", parse_dates = ["Date"])
+df_stock = pd.read_csv("SahamMNCBank.csv", parse_dates = ["Date"])
 df_stock = df_stock.rename(columns={"Ratio(%)" : 'Ratio'})
 df_stock['Index']= df_stock.index + 1
 df_stock.head()
