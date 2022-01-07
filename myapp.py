@@ -99,7 +99,7 @@ fig2.legend.location= 'top_right'
 """#Configure Panel"""
 
 # Output to file
-output_file('Visualisasi Saham MNC.html', title='Visualisasi Saham MNC')
+#output_file('Visualisasi Saham MNC.html', title='Visualisasi Saham MNC')
 
 #add title
 isi = """<h1>Fluktuasi Harga Saham MNC Bank 2014 - 2021</h1>
