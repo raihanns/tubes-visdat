@@ -1,1 +1,1 @@
-web: bokeh serve --port=$PORT --host=tubesvisdat2.herokuapp.com --host=* \ --address=0.0.0.0 --use-xheaders final_project_kelompok_13_visualisasi_data.py
+web: bokeh serve --port=$PORT --allow-websocket-origin=tubesvisdat2.herokuapp.com --address=0.0.0.0 --use-xheaders myapp.py
