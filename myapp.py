@@ -10,7 +10,7 @@ Original file is located at
 """
 
 from bokeh.io import output_notebook, curdoc
-from bokeh.plotting import figure, show
+from bokeh.plotting import figure, show, curdoc
 from bokeh.models.widgets import Tabs, Panel
 from bokeh.models import ColumnDataSource, GroupFilter, CDSView, HoverTool, Div
 from bokeh.layouts import column, widgetbox
@@ -111,4 +111,4 @@ fig2_panel = Panel(child=fig2, title='Volume Data')
 fig3_panel = Panel(child=fig3, title='Ratio Data (%)')
 tab = Tabs(tabs=[fig1_panel, fig2_panel, fig3_panel])
 #add layout
-show(column(title,tab))
+curdoc().add_root(column(title,tab))
