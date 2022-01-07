@@ -10,7 +10,7 @@ Original file is located at
 """
 
 from bokeh.io import output_notebook, curdoc
-from bokeh.plotting import figure, show, curdoc
+from bokeh.plotting import figure, show
 from bokeh.models.widgets import Tabs, Panel
 from bokeh.models import ColumnDataSource, GroupFilter, CDSView, HoverTool, Div
 from bokeh.layouts import column, widgetbox
@@ -18,7 +18,7 @@ import pandas as pd
 import numpy as np
 
 
-df_stock = pd.read_csv("https://github.com/raihanns/tubes-visdat/blob/main/SahamMNCBank.csv", parse_dates = ["Date"])
+df_stock = pd.read_csv("https://github.com/raihanns/tubes-visdat/blob/main/SahamMNCBank.csv")
 df_stock = df_stock.rename(columns={"Ratio(%)" : 'Ratio'})
 df_stock['Index']= df_stock.index + 1
 df_stock.head()
